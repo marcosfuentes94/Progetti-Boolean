@@ -1,17 +1,29 @@
 <script>
-  export default{
-    data(){
-      return {AppTitle: 'La mia prima app con Vite!'}
-    }
+import AppTitle from './components/AppTitle.vue';
+import AppHero from './components/AppHero.vue';
+
+
+  export default {
+    data() {
+      return 
+    },
+    components: {
+      AppTitle,
+      AppHero
+    },
   }
 </script>
 
 <template>
-  <h1>{{ AppTitle}}</h1>
+  <div>
+    <AppTitle/>
+  </div>
+
+  <div>
+    <AppHero/>
+  </div>
 </template>
 
-<style>
-  h1{
-    color: rgb(244, 41, 41);
-  }
+<style scoped>
+
 </style>
